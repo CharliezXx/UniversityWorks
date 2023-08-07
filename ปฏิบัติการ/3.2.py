@@ -1,0 +1,7 @@
+name = input('Name: ')
+id = input('ID: ')
+gpa = float(input('GPA: '))
+age = int(input('Age: '))
+print('1234567890'*3+'12345')
+print('{0:10}{1:10}{2:5}{3:^10}'.format('NAME','ID','GPA','AGE'))
+print('{0:10}{1:10}{2:<8.2f}{3:<7}'.format(name,id,gpa,age))

@@ -1,6 +1,6 @@
 odd = False
 while odd == False:
-    n = int(input('Enter an odd base (3-9):'))
+    n = int(input('Enter an odd base (3-9): '))
     if n%2 == 1 and not n>=10 and not n<3:
         odd = True
     else:
@@ -9,6 +9,7 @@ count = 1
 mid = int((1+n)/2)
 m=1
 while count !=n+1:
+    print('Row {} -> '.format(count),end='')
     if count <= mid:
         for i in range (0,count):
             print(count,end='')
