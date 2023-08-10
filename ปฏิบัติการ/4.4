@@ -1,0 +1,20 @@
+even=[]
+odd=[]
+print('Even number from 20 to 44: ',end='')
+for i in range(20 ,44+1):
+    if i%2 == 0:
+        print(i,end=' ')
+        even.append(i)
+print()
+print('There are {} even numbers.'.format(len(even)))
+print('Sum of all even numbers are {}.'.format(sum(even)))
+print('Odd number from -5 to -29: ',end='')
+for j in range(-5,-29-1,-1):
+    if j%2 == 1:
+        print(j, end=' ')
+        odd.append(j)
+print()
+print('There are {} odd numbers.'.format(len(odd)))
+print('Sum of all odd numbers are {}.'.format(sum(odd)))
+
+    
