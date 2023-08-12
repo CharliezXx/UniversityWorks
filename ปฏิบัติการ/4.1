@@ -1,0 +1,11 @@
+s = input('Enter a sentence: ')
+l = 0
+d = 0
+print('\"{}\"'.format(s))
+for i in range(0,len(s)):
+    if s[i].isalpha() == True:
+        l +=1
+    elif s[i].isdigit() == True:
+        d +=1
+print('contain {} letter(s) and {} digit(s)'.format(l,d))
+    
