@@ -1,0 +1,16 @@
+def dec_2_hex(x):
+    c = ['A','B','C','D','E','F']
+    if x>1:
+        dec_2_hex(x//16)
+    else:
+        return
+    if x%16 > 9:
+        print(c[(x%16)%10],end='')
+    else:
+        print(x%16,end=' ')
+    return''
+
+n = int(input('Enter an integer: '))
+print('Decimal',n,'=',end=' ')
+i = dec_2_hex(n)
+print('Hexadecimal')
