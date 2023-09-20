@@ -6,16 +6,12 @@ class Fac():
             if i != 1:
                 result = result*(i-1)
                 print(i,'*',sep='',end='')
-            else:
-                print(i)
-        print('{}! = {}'.format(x,result))
+            else:print(i,'\n{}! = {}'.format(x,result))
     def recursive(x,result=1,c=0):
-        if result ==1 :
-            print('Calculate Factorial Using Recursion\n{}! = '.format(x),end='')
+        if result ==1 : print('Calculate Factorial Using Recursion\n{}! = '.format(x),end='')
         if x>1:
             result,c = result*(x) , c+1
             print(x,'*',sep='',end='')
             return(x*Fac.recursive(x-1,result,c))
-        else:
-            print('1 \n{}! = {}'.format((c+1),result))
-            return 1
+        else:print('1 \n{}! = {}'.format((c+1),result))
+        return 1 
